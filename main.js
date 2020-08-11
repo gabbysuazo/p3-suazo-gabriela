@@ -14,142 +14,9 @@ $(document).ready(function(){
 
 
     $(box1).one("click", function pinkAnimation(){
-        $(box1).animate({left: '50%'}, 1000);
-        $(box2).animate({top: '50%'}, 1000);
-        $(box3).animate({top: '0%'}, 1000);
-        $(box4).animate({left: '0%'}, 1000);
-
-        $(box1).animate({top: '50%'}, 1000);
-        $(box2).animate({left: '0%'}, 1000);
-        $(box3).animate({left: '50%'}, 1000);
-        $(box4).animate({top: '0%'}, 1000);
-
-        $(box1).animate({left: '0%'}, 1000);
-        $(box2).animate({top: '0%'}, 1000);
-        $(box3).animate({top: '50%'}, 1000);
-        $(box4).animate({left: '50%'}, 1000);
-
-        $(box1).animate({top: '0%'}, 1000);
-        $(box2).animate({left: '50%'}, 1000);
-        $(box3).animate({left: '0%'}, 1000);
-        $(box4).animate({top: '50%'}, 1000);
-
-        setTimeout(function(){
-            $("#box1-text").html("3");
-            $("#box2-text").html("5"); 
-            $("#box3-text").html("7"); 
-            $("#box4-text").html("9");
-            firstClick = 1;
-        }, 4000);
-    });
-
-    $(box2).one("click", function blueAnimation(){
-        $(box1).animate({left: '50%'}, 1000);
-        $(box2).animate({top: '50%'}, 1000);
-        $(box3).animate({top: '0%'}, 1000);
-        $(box4).animate({left: '0%'}, 1000);
-
-        $(box1).animate({top: '50%'}, 1000);
-        $(box2).animate({left: '0%'}, 1000);
-        $(box3).animate({left: '50%'}, 1000);
-        $(box4).animate({top: '0%'}, 1000);
-
-        $(box1).animate({left: '0%'}, 1000);
-        $(box2).animate({top: '0%'}, 1000);
-        $(box3).animate({top: '50%'}, 1000);
-        $(box4).animate({left: '50%'}, 1000);
-
-        $(box1).animate({top: '0%'}, 1000);
-        $(box2).animate({left: '50%'}, 1000);
-        $(box3).animate({left: '0%'}, 1000);
-        $(box4).animate({top: '50%'}, 1000);
-
-        setTimeout(function(){
-            $("#box1-text").html("3");
-            $("#box2-text").html("5"); 
-            $("#box3-text").html("7"); 
-            $("#box4-text").html("9");
-            firstClick = 1;
-        }, 4000);
-    });
-
-    $(box3).one("click", function greenAnimation(){
-        $(box1).animate({left: '50%'}, 1000);
-        $(box2).animate({top: '50%'}, 1000);
-        $(box3).animate({top: '0%'}, 1000);
-        $(box4).animate({left: '0%'}, 1000);
-
-        $(box1).animate({top: '50%'}, 1000);
-        $(box2).animate({left: '0%'}, 1000);
-        $(box3).animate({left: '50%'}, 1000);
-        $(box4).animate({top: '0%'}, 1000);
-
-        $(box1).animate({left: '0%'}, 1000);
-        $(box2).animate({top: '0%'}, 1000);
-        $(box3).animate({top: '50%'}, 1000);
-        $(box4).animate({left: '50%'}, 1000);
-
-        $(box1).animate({top: '0%'}, 1000);
-        $(box2).animate({left: '50%'}, 1000);
-        $(box3).animate({left: '0%'}, 1000);
-        $(box4).animate({top: '50%'}, 1000);
-
-        $(box1).animate({left: '50%'}, 1000);
-        $(box2).animate({top: '50%'}, 1000);
-        $(box3).animate({top: '0%'}, 1000);
-        $(box4).animate({left: '0%'}, 1000);
-
-        setTimeout(function(){
-            $("#box1-text").html("5");
-            $("#box2-text").html("9"); 
-            $("#box3-text").html("3"); 
-            $("#box4-text").html("7");
-            firstClick = 1;
-        }, 5000);
-    });
-
-    $(box4).one("click", function yellowAnimation(){
-        $(box1).animate({left: '50%'}, 1000);
-        $(box2).animate({top: '50%'}, 1000);
-        $(box3).animate({top: '0%'}, 1000);
-        $(box4).animate({left: '0%'}, 1000);
-
-        $(box1).animate({top: '50%'}, 1000);
-        $(box2).animate({left: '0%'}, 1000);
-        $(box3).animate({left: '50%'}, 1000);
-        $(box4).animate({top: '0%'}, 1000);
-
-        $(box1).animate({left: '0%'}, 1000);
-        $(box2).animate({top: '0%'}, 1000);
-        $(box3).animate({top: '50%'}, 1000);
-        $(box4).animate({left: '50%'}, 1000);
-
-        $(box1).animate({top: '0%'}, 1000);
-        $(box2).animate({left: '50%'}, 1000);
-        $(box3).animate({left: '0%'}, 1000);
-        $(box4).animate({top: '50%'}, 1000);
-
-        $(box1).animate({left: '50%'}, 1000);
-        $(box2).animate({top: '50%'}, 1000);
-        $(box3).animate({top: '0%'}, 1000);
-        $(box4).animate({left: '0%'}, 1000);
-
-        $(box1).animate({top: '50%'}, 1000);
-        $(box2).animate({left: '0%'}, 1000);
-        $(box3).animate({left: '50%'}, 1000);
-        $(box4).animate({top: '0%'}, 1000);
-
-        setTimeout(function(){
-            $("#box1-text").html("9");
-            $("#box2-text").html("7"); 
-            $("#box3-text").html("5"); 
-            $("#box4-text").html("3");
-            firstClick = 1;
-        }, 6000);
-    });
-
-    if (firstClick == 1) {
-        $(box1).on("click", function pinkAnimation(){
+        if (firstClick > 0) {
+            return;
+        } else {
             $(box1).animate({left: '50%'}, 1000);
             $(box2).animate({top: '50%'}, 1000);
             $(box3).animate({top: '0%'}, 1000);
@@ -164,14 +31,136 @@ $(document).ready(function(){
             $(box2).animate({top: '0%'}, 1000);
             $(box3).animate({top: '50%'}, 1000);
             $(box4).animate({left: '50%'}, 1000);
-        });
-        $(box2).on("click", function blueAnimation(){
-        });
-        $(box3).on("click", function greenAnimation(){
-        });
-        $(box4).on("click", function yellowAnimation(){
-        });
-    } else {
-        console.log('Pick a Color. Choose Wisely.');
-    }
+
+            $(box1).animate({top: '0%'}, 1000);
+            $(box2).animate({left: '50%'}, 1000);
+            $(box3).animate({left: '0%'}, 1000);
+            $(box4).animate({top: '50%'}, 1000);
+
+            setTimeout(function(){
+                $("#box1-text").html("3");
+                $("#box2-text").html("5"); 
+                $("#box3-text").html("7"); 
+                $("#box4-text").html("9");
+                firstClick = firstClick + 1;
+            }, 4000);
+        }
+    });
+
+    $(box2).one("click", function blueAnimation(){
+        if (firstClick > 0) {
+            return;
+        } else {
+            $(box1).animate({left: '50%'}, 1000);
+            $(box2).animate({top: '50%'}, 1000);
+            $(box3).animate({top: '0%'}, 1000);
+            $(box4).animate({left: '0%'}, 1000);
+
+            $(box1).animate({top: '50%'}, 1000);
+            $(box2).animate({left: '0%'}, 1000);
+            $(box3).animate({left: '50%'}, 1000);
+            $(box4).animate({top: '0%'}, 1000);
+
+            $(box1).animate({left: '0%'}, 1000);
+            $(box2).animate({top: '0%'}, 1000);
+            $(box3).animate({top: '50%'}, 1000);
+            $(box4).animate({left: '50%'}, 1000);
+
+            $(box1).animate({top: '0%'}, 1000);
+            $(box2).animate({left: '50%'}, 1000);
+            $(box3).animate({left: '0%'}, 1000);
+            $(box4).animate({top: '50%'}, 1000);
+
+            setTimeout(function(){
+                $("#box1-text").html("3");
+                $("#box2-text").html("5"); 
+                $("#box3-text").html("7"); 
+                $("#box4-text").html("9");
+                firstClick = firstClick + 1;
+            }, 4000);
+        }
+    });
+
+    $(box3).one("click", function greenAnimation(){
+        if (firstClick > 0) {
+            return;
+        } else {
+            $(box1).animate({left: '50%'}, 1000);
+            $(box2).animate({top: '50%'}, 1000);
+            $(box3).animate({top: '0%'}, 1000);
+            $(box4).animate({left: '0%'}, 1000);
+
+            $(box1).animate({top: '50%'}, 1000);
+            $(box2).animate({left: '0%'}, 1000);
+            $(box3).animate({left: '50%'}, 1000);
+            $(box4).animate({top: '0%'}, 1000);
+
+            $(box1).animate({left: '0%'}, 1000);
+            $(box2).animate({top: '0%'}, 1000);
+            $(box3).animate({top: '50%'}, 1000);
+            $(box4).animate({left: '50%'}, 1000);
+
+            $(box1).animate({top: '0%'}, 1000);
+            $(box2).animate({left: '50%'}, 1000);
+            $(box3).animate({left: '0%'}, 1000);
+            $(box4).animate({top: '50%'}, 1000);
+
+            $(box1).animate({left: '50%'}, 1000);
+            $(box2).animate({top: '50%'}, 1000);
+            $(box3).animate({top: '0%'}, 1000);
+            $(box4).animate({left: '0%'}, 1000);
+
+            setTimeout(function(){
+                $("#box1-text").html("5");
+                $("#box2-text").html("9"); 
+                $("#box3-text").html("3"); 
+                $("#box4-text").html("7");
+                firstClick = firstClick + 1;
+            }, 5000);
+        }
+    });
+
+    $(box4).one("click", function yellowAnimation(){
+        if (firstClick > 0) {
+            return;
+        } else {
+            $(box1).animate({left: '50%'}, 1000);
+            $(box2).animate({top: '50%'}, 1000);
+            $(box3).animate({top: '0%'}, 1000);
+            $(box4).animate({left: '0%'}, 1000);
+
+            $(box1).animate({top: '50%'}, 1000);
+            $(box2).animate({left: '0%'}, 1000);
+            $(box3).animate({left: '50%'}, 1000);
+            $(box4).animate({top: '0%'}, 1000);
+
+            $(box1).animate({left: '0%'}, 1000);
+            $(box2).animate({top: '0%'}, 1000);
+            $(box3).animate({top: '50%'}, 1000);
+            $(box4).animate({left: '50%'}, 1000);
+
+            $(box1).animate({top: '0%'}, 1000);
+            $(box2).animate({left: '50%'}, 1000);
+            $(box3).animate({left: '0%'}, 1000);
+            $(box4).animate({top: '50%'}, 1000);
+
+            $(box1).animate({left: '50%'}, 1000);
+            $(box2).animate({top: '50%'}, 1000);
+            $(box3).animate({top: '0%'}, 1000);
+            $(box4).animate({left: '0%'}, 1000);
+
+            $(box1).animate({top: '50%'}, 1000);
+            $(box2).animate({left: '0%'}, 1000);
+            $(box3).animate({left: '50%'}, 1000);
+            $(box4).animate({top: '0%'}, 1000);
+
+            setTimeout(function(){
+                $("#box1-text").html("9");
+                $("#box2-text").html("7"); 
+                $("#box3-text").html("5"); 
+                $("#box4-text").html("3");
+                firstClick = firstClick + 1;
+            }, 6000);
+        }
+    });
 });
