@@ -58,25 +58,54 @@ $(document).ready(function(){
                 left:  '0%',
                 width: '100%',
                 height: '100%'
-            }, 1000);
+            }, 500);
             $(box2).animate({
                 top: '0%',
                 left:  '0%',
                 width: '0%',
                 height: '0%'
-            }, 1000);
+            }, 500);
             $(box3).animate({
                 top: '0%',
                 left:  '0%',
                 width: '0%',
                 height: '0%'
-            }, 1000);
+            }, 500);
             $(box4).animate({
                 top: '0%',
                 left:  '0%',
                 width: '0%',
                 height: '0%'
             }, 500);
+
+            $("#box1-text").fadeOut();
+            $("#box2-text").fadeOut();
+            $("#box3-text").fadeOut();
+            $("#box4-text").fadeOut();
+
+            setTimeout(function(){
+                $("#box1-text").html("temprary message");
+                document.getElementById("box1-text").style.backgroundColor = "#ffffff";
+                document.getElementById("box1-text").style.color = "#C879DB";
+                document.getElementById("box1-text").style.fontSize = "2rem";
+                document.getElementById("box1-text").style.padding = "25px";
+                document.getElementById("box1-text").style.textTransform = "none";
+                box1.style.flexDirection = "column";
+                document.getElementsByClassName("hidden")[0].style.backgroundColor = "#54BABA";
+                document.getElementsByClassName("hidden")[0].style.padding = "15px 20px";
+                document.getElementsByClassName("hidden")[0].style.borderRadius = "100px";
+                document.getElementsByClassName("hidden")[0].style.fontSize = "1.2rem";
+                document.getElementsByClassName("hidden")[0].style.marginTop = "50px";
+            }, 3000);
+
+            $("#box1-text").delay(4000).fadeIn();
+
+            setTimeout(function(){
+                $("a").removeClass("hidden");
+            }, 6000);
+
+        } else {
+            return;
         }
     });
 
@@ -126,25 +155,38 @@ $(document).ready(function(){
                 left:  '0%',
                 width: '0%',
                 height: '0%'
-            }, 1000);
+            }, 500);
             $(box2).animate({
                 top: '0%',
                 left:  '0%',
                 width: '100%',
                 height: '100%'
-            }, 1000);
+            }, 500);
             $(box3).animate({
                 top: '0%',
                 left:  '0%',
                 width: '0%',
                 height: '0%'
-            }, 1000);
+            }, 500);
             $(box4).animate({
                 top: '0%',
                 left:  '0%',
                 width: '0%',
                 height: '0%'
             }, 500);
+            
+            $("#box1-text").fadeOut();
+            $("#box2-text").fadeOut();
+            $("#box3-text").fadeOut();
+            $("#box4-text").fadeOut();
+
+            setTimeout(function(){
+                $("#box2-text").html("temprary message");
+            }, 3000);
+
+            $("#box2-text").delay(4000).fadeIn();
+        } else {
+            return;
         }
     });
 
@@ -199,25 +241,38 @@ $(document).ready(function(){
                 left:  '0%',
                 width: '0%',
                 height: '0%'
-            }, 1000);
+            }, 500);
             $(box2).animate({
                 top: '0%',
                 left:  '0%',
                 width: '0%',
                 height: '0%'
-            }, 1000);
+            }, 500);
             $(box3).animate({
                 top: '0%',
                 left:  '0%',
                 width: '100%',
                 height: '100%'
-            }, 1000);
+            }, 500);
             $(box4).animate({
                 top: '0%',
                 left:  '0%',
                 width: '0%',
                 height: '0%'
             }, 500);
+            
+            $("#box1-text").fadeOut();
+            $("#box2-text").fadeOut();
+            $("#box3-text").fadeOut();
+            $("#box4-text").fadeOut();
+
+            setTimeout(function(){
+                $("#box3-text").html("temprary message");
+            }, 3000);
+
+            $("#box3-text").delay(4000).fadeIn();
+        } else {
+            return;
         }
     });
 
@@ -277,25 +332,38 @@ $(document).ready(function(){
                 left:  '0%',
                 width: '0%',
                 height: '0%'
-            }, 1000);
+            }, 500);
             $(box2).animate({
                 top: '0%',
                 left:  '0%',
                 width: '0%',
                 height: '0%'
-            }, 1000);
+            }, 500);
             $(box3).animate({
                 top: '0%',
                 left:  '0%',
                 width: '0%',
                 height: '0%'
-            }, 1000);
+            }, 500);
             $(box4).animate({
                 top: '0%',
                 left:  '0%',
                 width: '100%',
                 height: '100%'
             }, 500);
+            
+            $("#box1-text").fadeOut();
+            $("#box2-text").fadeOut();
+            $("#box3-text").fadeOut();
+            $("#box4-text").fadeOut();
+
+            setTimeout(function(){
+                $("#box4-text").html("temprary message");
+            }, 3000);
+
+            $("#box4-text").delay(4000).fadeIn();
+        } else {
+            return;
         }
     });
 });
