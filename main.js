@@ -84,7 +84,7 @@ $(document).ready(function(){
             $("#box4-text").fadeOut();
 
             setTimeout(function(){
-                $("#box1-text").html("temprary message");
+                $("#box1-text").html("temprary message 1");
                 document.getElementById("box1-text").style.backgroundColor = "#ffffff";
                 document.getElementById("box1-text").style.color = "#C879DB";
                 document.getElementById("box1-text").style.fontSize = "2rem";
@@ -181,10 +181,25 @@ $(document).ready(function(){
             $("#box4-text").fadeOut();
 
             setTimeout(function(){
-                $("#box2-text").html("temprary message");
+                $("#box2-text").html("temprary message 2");
+                document.getElementById("box2-text").style.backgroundColor = "#ffffff";
+                document.getElementById("box2-text").style.color = "#7070ED";
+                document.getElementById("box2-text").style.fontSize = "2rem";
+                document.getElementById("box2-text").style.padding = "25px";
+                document.getElementById("box2-text").style.textTransform = "none";
+                box2.style.flexDirection = "column";
+                document.getElementsByClassName("hidden")[1].style.backgroundColor = "#E8D48F";
+                document.getElementsByClassName("hidden")[1].style.padding = "15px 20px";
+                document.getElementsByClassName("hidden")[1].style.borderRadius = "100px";
+                document.getElementsByClassName("hidden")[1].style.fontSize = "1.2rem";
+                document.getElementsByClassName("hidden")[1].style.marginTop = "50px";
             }, 3000);
 
             $("#box2-text").delay(4000).fadeIn();
+
+            setTimeout(function(){
+                $("a").removeClass("hidden");
+            }, 6000);
         } else {
             return;
         }
@@ -267,10 +282,25 @@ $(document).ready(function(){
             $("#box4-text").fadeOut();
 
             setTimeout(function(){
-                $("#box3-text").html("temprary message");
+                $("#box3-text").html("temprary message 3");
+                document.getElementById("box3-text").style.backgroundColor = "#ffffff";
+                document.getElementById("box3-text").style.color = "#54BABA";
+                document.getElementById("box3-text").style.fontSize = "2rem";
+                document.getElementById("box3-text").style.padding = "25px";
+                document.getElementById("box3-text").style.textTransform = "none";
+                box3.style.flexDirection = "column";
+                document.getElementsByClassName("hidden")[2].style.backgroundColor = "#C879DB";
+                document.getElementsByClassName("hidden")[2].style.padding = "15px 20px";
+                document.getElementsByClassName("hidden")[2].style.borderRadius = "100px";
+                document.getElementsByClassName("hidden")[2].style.fontSize = "1.2rem";
+                document.getElementsByClassName("hidden")[2].style.marginTop = "50px";
             }, 3000);
 
             $("#box3-text").delay(4000).fadeIn();
+
+            setTimeout(function(){
+                $("a").removeClass("hidden");
+            }, 6000);
         } else {
             return;
         }
@@ -358,10 +388,25 @@ $(document).ready(function(){
             $("#box4-text").fadeOut();
 
             setTimeout(function(){
-                $("#box4-text").html("temprary message");
+                $("#box4-text").html("temprary message 4");
+                document.getElementById("box4-text").style.backgroundColor = "#ffffff";
+                document.getElementById("box4-text").style.color = "#E8D48F";
+                document.getElementById("box4-text").style.fontSize = "2rem";
+                document.getElementById("box4-text").style.padding = "25px";
+                document.getElementById("box4-text").style.textTransform = "none";
+                box4.style.flexDirection = "column";
+                document.getElementsByClassName("hidden")[3].style.backgroundColor = "#7070ED";
+                document.getElementsByClassName("hidden")[3].style.padding = "15px 20px";
+                document.getElementsByClassName("hidden")[3].style.borderRadius = "100px";
+                document.getElementsByClassName("hidden")[3].style.fontSize = "1.2rem";
+                document.getElementsByClassName("hidden")[3].style.marginTop = "50px";
             }, 3000);
 
             $("#box4-text").delay(4000).fadeIn();
+
+            setTimeout(function(){
+                $("a").removeClass("hidden");
+            }, 6000);
         } else {
             return;
         }
