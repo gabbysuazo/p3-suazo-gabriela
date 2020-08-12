@@ -52,8 +52,31 @@ $(document).ready(function(){
             box4.style.transition = "3s linear";
             box4.style.transform = 'rotate(1080deg)';
             console.log(click);
-        } else if (click > 1){
-            return;
+        } else if (click == 2){
+            $(box1).animate({
+                top: '0%',
+                left:  '0%',
+                width: '100%',
+                height: '100%'
+            }, 1000);
+            $(box2).animate({
+                top: '0%',
+                left:  '0%',
+                width: '0%',
+                height: '0%'
+            }, 1000);
+            $(box3).animate({
+                top: '0%',
+                left:  '0%',
+                width: '0%',
+                height: '0%'
+            }, 1000);
+            $(box4).animate({
+                top: '0%',
+                left:  '0%',
+                width: '0%',
+                height: '0%'
+            }, 500);
         }
     });
 
@@ -97,8 +120,31 @@ $(document).ready(function(){
             box4.style.transition = "5s linear";
             box4.style.transform = 'rotate(1800deg)';
             console.log(click);
-        } else if (click > 1){
-            return;
+        } else if (click == 2){
+            $(box1).animate({
+                top: '0%',
+                left:  '0%',
+                width: '0%',
+                height: '0%'
+            }, 1000);
+            $(box2).animate({
+                top: '0%',
+                left:  '0%',
+                width: '100%',
+                height: '100%'
+            }, 1000);
+            $(box3).animate({
+                top: '0%',
+                left:  '0%',
+                width: '0%',
+                height: '0%'
+            }, 1000);
+            $(box4).animate({
+                top: '0%',
+                left:  '0%',
+                width: '0%',
+                height: '0%'
+            }, 500);
         }
     });
 
@@ -147,8 +193,31 @@ $(document).ready(function(){
             box4.style.transition = "7s linear";
             box4.style.transform = 'rotate(2520deg)';
             console.log(click);
-        } else if (click > 1){
-            return;
+        } else if (click == 2){
+            $(box1).animate({
+                top: '0%',
+                left:  '0%',
+                width: '0%',
+                height: '0%'
+            }, 1000);
+            $(box2).animate({
+                top: '0%',
+                left:  '0%',
+                width: '0%',
+                height: '0%'
+            }, 1000);
+            $(box3).animate({
+                top: '0%',
+                left:  '0%',
+                width: '100%',
+                height: '100%'
+            }, 1000);
+            $(box4).animate({
+                top: '0%',
+                left:  '0%',
+                width: '0%',
+                height: '0%'
+            }, 500);
         }
     });
 
@@ -202,8 +271,31 @@ $(document).ready(function(){
             box4.style.transition = "9s linear";
             box4.style.transform = 'rotate(3240deg)';
             console.log(click);
-        } else if (click > 1){
-            return;
+        } else if (click == 2){
+            $(box1).animate({
+                top: '0%',
+                left:  '0%',
+                width: '0%',
+                height: '0%'
+            }, 1000);
+            $(box2).animate({
+                top: '0%',
+                left:  '0%',
+                width: '0%',
+                height: '0%'
+            }, 1000);
+            $(box3).animate({
+                top: '0%',
+                left:  '0%',
+                width: '0%',
+                height: '0%'
+            }, 1000);
+            $(box4).animate({
+                top: '0%',
+                left:  '0%',
+                width: '100%',
+                height: '100%'
+            }, 500);
         }
     });
 });
