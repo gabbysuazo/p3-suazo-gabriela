@@ -57,13 +57,13 @@ $(document).ready(function(){
             }, 4000);
         } else if (click == 1){
             click = click + 1;
-            box1.style.transition = "3s linear";
+            box1.style.transition = "5s linear";
             box1.style.transform = 'rotate(1080deg)';
-            box2.style.transition = "3s linear";
+            box2.style.transition = "5s linear";
             box2.style.transform = 'rotate(1080deg)';
-            box3.style.transition = "3s linear";
+            box3.style.transition = "5s linear";
             box3.style.transform = 'rotate(1080deg)';
-            box4.style.transition = "3s linear";
+            box4.style.transition = "5s linear";
             box4.style.transform = 'rotate(1080deg)';
         } else if (click == 2){
             $(box1).animate({
@@ -99,23 +99,23 @@ $(document).ready(function(){
             setTimeout(function(){
                 $("#box1-text").html(messages[randomIndex]);
                 document.getElementById("box1-text").style.backgroundColor = "#ffffff";
-                document.getElementById("box1-text").style.color = "#C879DB";
+                document.getElementById("box1-text").style.color = "#7070ED";
                 document.getElementById("box1-text").style.fontSize = "2rem";
                 document.getElementById("box1-text").style.padding = "25px";
                 document.getElementById("box1-text").style.textTransform = "none";
                 box1.style.flexDirection = "column";
-                document.getElementsByClassName("hidden")[0].style.backgroundColor = "#54BABA";
+                document.getElementsByClassName("hidden")[0].style.backgroundColor = "#7070ED";
                 document.getElementsByClassName("hidden")[0].style.padding = "15px 20px";
                 document.getElementsByClassName("hidden")[0].style.borderRadius = "100px";
                 document.getElementsByClassName("hidden")[0].style.fontSize = "1.2rem";
                 document.getElementsByClassName("hidden")[0].style.marginTop = "50px";
             }, 3000);
 
-            $("#box1-text").delay(4000).fadeIn();
+            $("#box1-text").delay(5000).fadeIn();
 
             setTimeout(function(){
                 $("a").removeClass("hidden");
-            }, 6000);
+            }, 7000);
 
         } else {
             return;
@@ -195,7 +195,7 @@ $(document).ready(function(){
             setTimeout(function(){
                 $("#box2-text").html(messages[randomIndex]);
                 document.getElementById("box2-text").style.backgroundColor = "#ffffff";
-                document.getElementById("box2-text").style.color = "#7070ED";
+                document.getElementById("box2-text").style.color = "#E8D48F";
                 document.getElementById("box2-text").style.fontSize = "2rem";
                 document.getElementById("box2-text").style.padding = "25px";
                 document.getElementById("box2-text").style.textTransform = "none";
@@ -207,11 +207,11 @@ $(document).ready(function(){
                 document.getElementsByClassName("hidden")[1].style.marginTop = "50px";
             }, 3000);
 
-            $("#box2-text").delay(4000).fadeIn();
+            $("#box2-text").delay(5000).fadeIn();
 
             setTimeout(function(){
                 $("a").removeClass("hidden");
-            }, 6000);
+            }, 7000);
         } else {
             return;
         }
@@ -253,13 +253,13 @@ $(document).ready(function(){
             }, 5000);
         } else if (click == 1){
             click = click + 1;
-            box1.style.transition = "7s linear";
+            box1.style.transition = "5s linear";
             box1.style.transform = 'rotate(2520deg)';
-            box2.style.transition = "7s linear";
+            box2.style.transition = "5s linear";
             box2.style.transform = 'rotate(2520deg)';
-            box3.style.transition = "7s linear";
+            box3.style.transition = "5s linear";
             box3.style.transform = 'rotate(2520deg)';
-            box4.style.transition = "7s linear";
+            box4.style.transition = "5s linear";
             box4.style.transform = 'rotate(2520deg)';
         } else if (click == 2){
             $(box1).animate({
@@ -295,23 +295,23 @@ $(document).ready(function(){
             setTimeout(function(){
                 $("#box3-text").html(messages[randomIndex]);
                 document.getElementById("box3-text").style.backgroundColor = "#ffffff";
-                document.getElementById("box3-text").style.color = "#54BABA";
+                document.getElementById("box3-text").style.color = "#7070ED";
                 document.getElementById("box3-text").style.fontSize = "2rem";
                 document.getElementById("box3-text").style.padding = "25px";
                 document.getElementById("box3-text").style.textTransform = "none";
                 box3.style.flexDirection = "column";
-                document.getElementsByClassName("hidden")[2].style.backgroundColor = "#C879DB";
+                document.getElementsByClassName("hidden")[2].style.backgroundColor = "#7070ED";
                 document.getElementsByClassName("hidden")[2].style.padding = "15px 20px";
                 document.getElementsByClassName("hidden")[2].style.borderRadius = "100px";
                 document.getElementsByClassName("hidden")[2].style.fontSize = "1.2rem";
                 document.getElementsByClassName("hidden")[2].style.marginTop = "50px";
             }, 3000);
 
-            $("#box3-text").delay(4000).fadeIn();
+            $("#box3-text").delay(5000).fadeIn();
 
             setTimeout(function(){
                 $("a").removeClass("hidden");
-            }, 6000);
+            }, 7000);
         } else {
             return;
         }
@@ -358,13 +358,13 @@ $(document).ready(function(){
             }, 6000);
         } else if (click == 1){
             click = click + 1;
-            box1.style.transition = "9s linear";
+            box1.style.transition = "5s linear";
             box1.style.transform = 'rotate(3240deg)';
-            box2.style.transition = "9s linear";
+            box2.style.transition = "5s linear";
             box2.style.transform = 'rotate(3240deg)';
-            box3.style.transition = "9s linear";
+            box3.style.transition = "5s linear";
             box3.style.transform = 'rotate(3240deg)';
-            box4.style.transition = "9s linear";
+            box4.style.transition = "5s linear";
             box4.style.transform = 'rotate(3240deg)';
         } else if (click == 2){
             $(box1).animate({
@@ -400,23 +400,23 @@ $(document).ready(function(){
             setTimeout(function(){
                 $("#box4-text").html(messages[randomIndex]);
                 document.getElementById("box4-text").style.backgroundColor = "#ffffff";
-                document.getElementById("box4-text").style.color = "#E8D48F";
+                document.getElementById("box4-text").style.color = "#54BABA";
                 document.getElementById("box4-text").style.fontSize = "2rem";
                 document.getElementById("box4-text").style.padding = "25px";
                 document.getElementById("box4-text").style.textTransform = "none";
                 box4.style.flexDirection = "column";
-                document.getElementsByClassName("hidden")[3].style.backgroundColor = "#7070ED";
+                document.getElementsByClassName("hidden")[3].style.backgroundColor = "#54BABA";
                 document.getElementsByClassName("hidden")[3].style.padding = "15px 20px";
                 document.getElementsByClassName("hidden")[3].style.borderRadius = "100px";
                 document.getElementsByClassName("hidden")[3].style.fontSize = "1.2rem";
                 document.getElementsByClassName("hidden")[3].style.marginTop = "50px";
             }, 3000);
 
-            $("#box4-text").delay(4000).fadeIn();
+            $("#box4-text").delay(5000).fadeIn();
 
             setTimeout(function(){
                 $("a").removeClass("hidden");
-            }, 6000);
+            }, 7000);
         } else {
             return;
         }
